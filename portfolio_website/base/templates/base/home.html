@@ -1,0 +1,109 @@
+<!-- Django uses Ginger -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 📊 Portfolio Website</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <nav>
+        <img src="{% static '/images/logo_gabriel.png'%}" alt="NavBar Logo" style="position: absolute; width: 191px; height: 51px; left: 51px; top: 38px;">
+        
+        <ul>
+            <li> <a class="home" href="hyperlink to be added">Home</a> </li>
+            <li> <a class="about" href="hyperlink to be added">About</a> </li>
+            <li> <a class="projects" href="hyperlink to be added">Projects</a> </li>
+        </ul>
+
+        <button type="button"> 
+            <img src="{% static '/images/download_cv.png' %}" alt="Download Icon">
+            Download CV
+        </button> 
+
+    </nav> 
+
+    <div class="row1"> 
+        <div class="row1_col1">
+            <img src="{% static '/images/purple_graph.png'%}" alt="Homepage Image" style="position: absolute; width: 426px; height: 496px; left: 126px; top: 168px;" >
+        </div>
+        <div class="row1_col2">
+            <p class="Name">Gabriel Vieira</p>
+            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI,</p>
+            <button class="LearnMore" type="button"> Learn More </button>
+            <button class="Contact" type="button"> Contact </button>
+            <button class="Instagram" type="button"> <img src="{% static '/images/instagram.png' %}" alt="instagram Icon"> </button>
+            <button class="LinkedIn" type="button"> <img src="{% static '/images/linkedin.png' %}" alt="LinkedIn Icon"> </button>
+            <button class="GitHub" type="button"> <img src="{% static '/images/github.png' %}" alt="GitHub Icon"> </button>
+        </div>
+    </div>
+    
+    <div class="row2">
+        <div class="row2_col1">
+            <div class="row_2_col1_col1">
+                <img src="{% static '/images/profile_pic.png' %}" alt="Profile Picture" >
+            </div>
+            <div class="row_2_col1_col2">
+                <h3>Gabriel Vieira</h3>
+                <h5>24 Years Old</h5>
+                <h5>devGvieira@gmail.com</h5>
+            </div>
+            <p>A professional proficient in Portuguese, English, German and French with 6 years experience in physics, wherein I conducted research on both theoretical and experimental physics, namely cosmology and X-ray computed microtomography, and also engaged on teaching children and teenagers not only physics but also mathematics, English, history, philosophy, sociology and geography.</p>
+        </div>
+        <div class="row_2_col1_col1">
+            <h3>Professional Experience</h3>
+            <h2>AI Resident | Physics Reseacher | Teacher | Technical Translator</h2>
+        </div>
+        <div class="row_2_col1_col2">
+            <h3>Skills</h3>
+            <h2>AI Specialist | Data Scientist | Software Developer | Polygglot</h2>
+        <div class="row2_col2"> 
+            <h4>Programming Languages</h4>
+                <div class="Python">Python</div>
+                <div class="SQL">SQL</div>
+                <div class="HTML">HTML</div>
+                <div class="CSS">CSS</div>
+            <h4>Frameworks</h4>
+                <div class="Django">Django</div>
+                <div class="Streamlit">Streamlit</div>
+                <div class="TensorFlow">TensorFlow</div>
+                <div class="Scikit-Learn">Scikit-Learn</div>
+            <h4>Languages</h4>
+                <div class="Portuguese">Portuguese</div>
+                <div class="English">English</div>
+                <div class="German">German</div>
+                <div class="French">French</div>
+        </div>
+    </div>
+
+    <div class="row3"> 
+        <h3>Projects</h4>
+        
+        <div class="row3_col1">
+            <h4 class="Project1">Project 01</h4>
+            <h6 class="Description">Description</h6>
+            <p class="Paragraph_Description">Describe project.</p>
+            <h4 class="Tools">Programming Languages</h4>
+            <div class="Python_Tool">Python</div>
+        </div>
+        <div class="row3_col2">
+            <h4 class="Project1">Project 01</h4>
+            <h6 class="Description">Description</h6>
+            <p class="Paragraph_Description">Describe project.</p>
+            <h4 class="Tools">Programming Languages</h4>
+            <div class="Python_Tool">Python</div>
+        </div>
+        <div class="row3_col3">
+            <h4 class="Project1">Project 01</h4>
+            <h6 class="Description">Description</h6>
+            <p class="Paragraph_Description">Describe project.</p>
+            <h4 class="Tools">Programming Languages</h4>
+            <div class="Python_Tool">Python</div>
+        </div>
+    </div>
+</body>
+</html>

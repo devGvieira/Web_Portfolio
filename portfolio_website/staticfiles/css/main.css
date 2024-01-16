@@ -1,0 +1,258 @@
+body{
+    background: #1F1F1F;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: justify;
+    display: flex;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+
+    nav {
+        ul{
+            display: inline;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: center;
+            text-decoration: none;
+            
+            li{
+                a.home:link, a.home:visited, a.home:hover, a.home:active {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-transform: capitalize;
+                    position: absolute;
+                    width: 68px;
+                    height: 33px;
+                    left: 505px;
+                    top: 37px;
+                }
+        
+                a.about:link, a.about:visited, a.about:hover, a.about:active {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-transform: capitalize;
+                    position: absolute;
+                    width: 68px;
+                    height: 33px;
+                    left: 649px;
+                    top: 37px;
+                    }
+        
+                a.projects:link, a.projects:visited, a.projects:hover, a.projects:active {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-transform: capitalize;
+                    position: absolute;
+                    width: 90px;
+                    height: 33px;
+                    left: 793px;
+                    top: 37px;
+                    }
+                }
+        }        
+
+        button {
+            position: absolute;
+            width: 190px;
+            height: 59px;
+            left: 1116px;
+            top: 27px;
+            border-radius: 10px;
+            background-color: #540D8D;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 22px;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: none;
+
+            color: #FFFFFF;
+        }
+    
+    }
+
+    div.row1{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.row1.row1_col1{
+        flex: 1;
+        box-sizing: border-box;
+    }
+
+    .row1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .row2 {
+        position: absolute;
+        top: 750px; /* Adjust the distance from the top as needed */
+        left: 0;
+    }
+    
+    .row3 {
+        position: absolute;
+        top: 1500px; /* Adjust the distance from the top as needed */
+        left: 0;
+    }
+
+    .row1_col2 .Name {
+
+            position: absolute;
+            width: 452px;
+            height: 87px;
+            left: 714px;
+            top: 227px;
+            
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 87px;
+            text-align: left;
+            
+            color: #FFFFFF;
+    }
+
+    .row1_col2 p {
+
+            position: absolute;
+            width: 573px;
+            height: 80px;
+            left: 714px;
+            top: 339px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: justify;
+
+            color: #FFFFFF;
+    }
+
+    .row1_col2 .LearnMore {
+
+            position: absolute;
+            width: 166px;
+            height: 59px;
+            left: 714px;
+            top: 459px;
+
+            background: #540D8D;
+            border-radius: 10px;
+            border: none;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+
+            color: #FFFFFF;
+    }
+
+    .row1_col2 .Contact{
+
+            position: absolute;
+            width: 166px;
+            height: 59px;
+            left: 910px;
+            top: 459px;
+
+            background: #D6DAE4;
+            border-radius: 10px;
+
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            text-align: center;
+
+            color: #636363;
+    }
+
+    .row1_col2 .Instagram{
+
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 1176px;
+            top: 702px;
+            background-color: #1F1F1F;
+            border: none;
+    }
+
+    .row1_col2 .LinkedIn{
+
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 1226px;
+            top: 702px;
+            background-color: #1F1F1F;
+            border: none;
+    }
+
+    .row1_col2 .GitHub{
+
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 1276px;
+            top: 702px;
+            background-color: #1F1F1F;
+            border: none;
+    }
+
+    .row_2_col1_col1 img {
+
+            position: absolute;
+            width: 244px;
+            height: 244px;
+            left: 96px;
+            top: 169px;
+
+            /* background: #D9D9D9;
+            box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1); */
+    }
+}
+
+
+
+
+
+
+
+
