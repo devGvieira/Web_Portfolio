@@ -204,6 +204,18 @@ div.row2{
     height: 768px;
 }
 
+div.NavBar_2 {
+
+    position: absolute;
+    width: 1366px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+
+    background: #1F1F1F;
+    box-shadow: 0px 4px 24px 8px rgba(0, 0, 0, 0.2);
+}
+
 p.Name_ {
 
     position: absolute;
@@ -671,6 +683,18 @@ div.row3 {
     height: 831px;
 }
 
+div.NavBar_3 {
+
+    position: absolute;
+    width: 1366px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+
+    background: #1F1F1F;
+    box-shadow: 0px 4px 24px 8px rgba(0, 0, 0, 0.2);
+}
+
 p.Projects {
 
     position: absolute;
@@ -1025,12 +1049,11 @@ div.Python_Tool_3 {
 }
 
 button.Repository_1 {
-
     position: absolute;
     width: 230px;
     height: 41px;
-    left: 159px;
-    top: 638px;
+    left: 40px;
+    top: 390px;
 
     background: #540D8D;
     border-radius: 10px;
@@ -1048,4 +1071,190 @@ button.Repository_1 {
     justify-content: space-evenly;
 
     color: #FFFFFF;
+}
+
+button.Repository_2 {
+
+    position: absolute;
+    width: 230px;
+    height: 41px;
+    left: 40px;
+    top: 390px;
+
+    background: #540D8D;
+    border-radius: 10px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: #FFFFFF;
+}
+
+button.Repository_3 {
+
+    position: absolute;
+    width: 230px;
+    height: 41px;
+    left: 40px;
+    top: 390px;
+
+    background: #540D8D;
+    border-radius: 10px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: #FFFFFF;
+}
+
+div.Bottom_NavBar {
+
+    position: absolute;
+    width: 1366px;
+    height: 196px;
+    left: 0px;
+    top: 2338px;
+
+    background: #1F1F1F;
+}
+
+p.Contact_Bottom {
+
+    position: absolute;
+    width: 132px;
+    height: 48px;
+    left: 617px;
+    top: 11px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: justify;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+p.Gmail_Bottom {
+
+    position: absolute;
+    width: 190px;
+    height: 21px;
+    left: 657px;
+    top: 106px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+p.Phone_Bottom {
+
+    position: absolute;
+    width: 121px;
+    height: 22px;
+    left: 657px;
+    top: 142px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+p.Social_Media_Bottom {
+
+    position: absolute;
+    width: 250;
+    height: 48px;
+    left: 954px;
+    top: 11px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: justify;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+p.Copyright {
+
+    position: absolute;
+    width: 700px;
+    height: 22px;
+    left: 460px;
+    top: 190px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+
+button.Instagram_Bottom {
+    position: absolute; 
+    width: 30px; 
+    height: 30px; 
+    left: 954px; 
+    top: 116px;
+    background: none;
+    border: none;
+}
+
+button.LinkedIn_Bottom {
+    position: absolute; 
+    width: 30px; 
+    height: 30px; 
+    left: 1004px; 
+    top: 116px;
+    background: none;
+    border: none;
+}
+
+button.GitHub_Bottom {
+    position: absolute; 
+    width: 30px; 
+    height: 30px; 
+    left: 1054px; 
+    top: 116px;
+    background: none;
+    border: none;
 }
