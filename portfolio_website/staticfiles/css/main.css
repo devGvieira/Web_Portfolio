@@ -106,13 +106,13 @@ img.Purple_Graph {
     width: 28vw;
     height: auto;
     left: 18vw;
-    top: 13vw;    
+    top: 6vw;    
 }
 
 p.Name {
     position: absolute;
     left: 54.5vw;
-    top: 15vw;
+    top: 8vw;
     
     font-family: 'Open Sans';
     font-style: normal;
@@ -126,9 +126,7 @@ p.Name {
 p.Text {
     position: absolute;
     width: 30vw;
-    height: 8vw;
     left: 54.5vw;
-    top: 21.5vw;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -139,16 +137,23 @@ p.Text {
     color: #FFFFFF;
 }
 
-#LearnMore {
-    position: absolute;
-    width: 9.5vw;
-    height: 2.75vw;
-    left: 54.5vw;
-    top: 29vw;
+#Needs_Row_1 {
+    top: 13.75vw;
+}
 
-    background: #540D8D;
-    border-radius: 0.5vw;
-    border: none;
+#Bio_Row_1 {
+    height: 8vw;
+    top: 19.5vw;
+}
+
+#Solutions_Row_1 {
+    top: 31.5vw;
+}
+
+a.Buttons {
+    position: absolute;
+    height: 2.75vw;
+    top: 35vw;
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -159,30 +164,26 @@ p.Text {
     align-items: center;
     justify-content: space-evenly;
     text-decoration: none;
+    border: none;
+
+    border-radius: 0.5vw;
+}
+
+#LearnMore {
+    width: 9.5vw;
+    left: 54.5vw;
+
+    background: #540D8D;
+    border-radius: 0.5vw;
 
     color: #FFFFFF;    
 }
 
 #Contact {
-    position: absolute;
     width: 9.5vw;
-    height: 2.75vw;
     left: 65.5vw;
-    top: 29vw;
 
     background: #D6DAE4;
-    border-radius: 0.5vw;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.175vw;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-decoration: none;
-
     color: #636363;    
 }
 
@@ -191,7 +192,7 @@ p.Text {
     width: 1.75vw;
     height: auto;
     right: 3.85vw;
-    top: 24.5vw;
+    top: 3.85vw;
     background-color: #1F1F1F;
     border: none;
 }
@@ -201,7 +202,7 @@ p.Text {
     width: 1.75vw;
     height: auto;
     right: 2.4vw;
-    top: 24.5vw;
+    top: 3.85vw;
     background-color: #1F1F1F;
     border: none;
 }
@@ -211,9 +212,66 @@ p.Text {
     width: 1.75vw;
     height: auto;
     right: 1.1vw;
-    top: 24.5vw;
+    top: 3.85vw;
     background-color: #1F1F1F;
     border: none;    
+}
+
+#Footer_Row_1 {
+    position: absolute;
+    width: 100vw;
+    height: 10vw;
+    top: 42vw;
+    padding: 0;
+
+    background-color: #1F1F1F;
+    box-shadow: 0vw 0.2vw 0.5vw 0.3vw rgba(0, 0, 0, 0.2);
+}
+
+p.Icon_Titles {
+    position: absolute;
+    top: 7vw;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1vw;
+    text-align: left;
+    
+    color: #FFFFFF; 
+}
+
+img.Icons {
+    position: absolute;
+    top: 1vw;
+    width: 6.2vw;
+    height: auto;
+}
+
+#Data_Science {
+    left: 24vw;
+}
+
+#Data_Science_Title {
+    width: 20vw;
+    left: 21.25vw;
+}
+
+#AI {
+    left: 49.25vw;
+}
+
+#AI_Title {
+    width: 10vw;
+    left: 49.25vw;
+}
+
+#Software {
+    left: 74.25vw;
+}
+
+#Software_Title {
+    left: 71.5vw;
 }
 
 section.row2{
@@ -670,7 +728,6 @@ img.GitHub_Download {
 }
 
 footer.Bottom_NavBar {
-
     position: absolute;
     width: 100vw;
     height: 12.5vw;
