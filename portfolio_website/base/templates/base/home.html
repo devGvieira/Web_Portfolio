@@ -5,63 +5,53 @@
 <head>
     <title> 📊 Portfolio Website</title>
     <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
     <nav class="NavBar">
-        <img src="{% static '/images/logo_gabriel.png'%}" alt="Logo" style="position: absolute; width: 191px; height: 51px; left: 51px; top: 38px;">
+        <img id="Logo" src="{% static '/images/logo_gabriel.png'%}" alt="Logo">
         
         <ul>
-            <li> <a class="home" href="hyperlink to be added">Home</a> </li>
-            <li> <a class="about" href="hyperlink to be added">About</a> </li>
-            <li> <a class="projects" href="hyperlink to be added">Projects</a> </li>
+            <li> <a class="NavBar_Buttons" id="home" href="#Home">Home</a> </li>
+            <li> <a class="NavBar_Buttons" id="about" href="#About">About</a> </li>
+            <li> <a class="NavBar_Buttons" id="projects" href="#Projects">Projects</a> </li>
         </ul>
     
 
-        <button class="Download_Button" type="button"> 
-            <img src="{% static '/images/download_cv.png' %}" alt="Download Icon">
+        <a class="Download_Button" href="{% url 'download_pdf'%}" > 
+            <img id="Download_CV" src="{% static '/images/download_cv.png' %}" alt="Download Icon">
             Download CV
-        </button> 
+        </a> 
     </nav>
 
-    <div class="row1">
+    <section id="Home" class="row1">
 
         <div class="row1_col1">
-            <img class="purple_graph" src="{% static '/images/purple_graph.png'%}" alt="Homepage Image" style="position: absolute; width: 426px; height: 496px; left: 126px; top: 168px;" >
+            <img class="Purple_Graph" src="{% static '/images/purple_graph.png'%}" alt="Homepage Image">
         </div>
 
         <div class="row1_col2">
             <p class="Name">Gabriel Vieira</p>
-            <p class="Text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI,</p>
-            <button class="LearnMore" type="button"> Learn More </button>
-            <button class="Contact" type="button"> Contact </button>
-            <button class="Instagram" type="button"> <img src="{% static '/images/instagram.png' %}" alt="instagram Icon"> </button>
-            <button class="LinkedIn" type="button"> <img src="{% static '/images/linkedin.png' %}" alt="LinkedIn Icon"> </button>
-            <button class="GitHub" type="button"> <img src="{% static '/images/github.png' %}" alt="GitHub Icon"> </button>
+            <p class="Text">IT professional with experience on computer vision and predictive models specialized on developing solutions for companies on the industry 4.0</p>
+            <a id="LearnMore" href="#About"> Learn More </a>
+            <a id="Contact" href="#Bottom_NavBar"> Contact </a>
+            <a id="Instagram" href="https://www.instagram.com/g_briel.vieira/"> <img id="Instagram_Image" src="{% static '/images/instagram.png' %}" alt="instagram Icon"> </a>
+            <a id="LinkedIn" href="https://www.linkedin.com/in/devgvieira/"> <img id="LinkedIn_Image" src="{% static '/images/linkedin.png' %}" alt="LinkedIn Icon"> </a>
+            <a id="GitHub"  href="https://github.com/devGvieira"> <img id="GitHub_Image" src="{% static '/images/github.png' %}" alt="GitHub Icon"> </a>
         </div>
 
-    </div>
+    </section>
 
-    <div class="row2">
-        <div class="NavBar_2">
-            <img src="{% static '/images/logo_gabriel.png'%}" alt="Logo" style="position: absolute; width: 191px; height: 51px; left: 51px; top: 38px;">
-            
-            <ul>
-                <li> <a class="home" href="hyperlink to be added">Home</a> </li>
-                <li> <a class="about" href="hyperlink to be added">About</a> </li>
-                <li> <a class="projects" href="hyperlink to be added">Projects</a> </li>
-            </ul>
-        
-    
-            <button class="Download_Button" type="button"> 
-                <img src="{% static '/images/download_cv.png' %}" alt="Download Icon">
-                Download CV
-            </button> 
-        </div>
+    <section id="About" class="row2">
+
+        <h1 class="Heading" id="About_Title">About</h1>
+
         <div class="row2_col1">
 
             <div class="row_2_col1_col1">
-                <img src="{% static '/images/profile_pic.png' %}" alt="Profile Picture" style="position: absolute; width: 244px; height: 244px; left: 96px; top: 169px;">
+                <img class="Profile_Pic" src="{% static '/images/profile_pic.png' %}" alt="Profile Picture">
             </div>
 
             <div class="row_2_col1_col2">
@@ -70,113 +60,99 @@
                 <p class="Email_1">devGvieira@gmail.com</p>
             </div>
 
-            <p class="Bio">A professional proficient in Portuguese, English, German and French with 6 years experience in physics, wherein I conducted research on both theoretical and experimental physics, namely cosmology and X-ray computed microtomography, and also engaged on teaching children and teenagers not only physics but also mathematics, English, history, philosophy, sociology and geography.</p>
+            <p class="Bio">I am an <b>IT professional</b> focused on <b>artificial intelligence</b> and <b>data science</b> besides being a former physicist with experience on research and lecturing, I also am bilingual bringing experience abroad as an U.S.A. Youth Ambassador and having worked both as an ESL teacher and technical translator. Among the AI algorithms I am familiar, one will find <b> Physics-Informed Neural Networks</b>, <b>Fully Convolutional Neural Networks</b>, <b>XGBoost</b>, <b>Random Forest</b>, <b>K-Means</b> and <b>K-Nearest Neighbours</b>. I have also worked as a <b>private teacher</b> of various school subjects for 5+ years to students of all ages, what has provided me with both <b>oratory</b> and <b>story-telling skills</b> while at the same time achieving a better understandment of not only nature's laws but also human sciences. As a hobby, I enjoy learning languages, what made me <b>proficient</b> in <b>German</b> and <b>French</b>.</p>
 
         </div>
-    </div>
 
     <div class="row_2_col1_col1">
-        <p class="Professional_Exp">Professional Experience</p>
-        <p class="Experience">AI Resident | Physics Reseacher Teacher | Technical Translator</p>
+        <h2 class="Heading_Bottom_Row_2" id="Professional_Exp">Professional Experience</h2>
+        <p class="Lists" id="Experience">AI Resident | Physics Reseacher Teacher | Technical Translator</p>
     </div>
 
     <div class="row_2_col1_col2">
-        <p class="Skills">Skills</p>
-        <p class="Skills_List">AI Specialist | Data Scientist Software Developer | Polyglot</p>
+        <h2 class="Heading_Bottom_Row_2" id="Skills">Skills</h2>
+        <p class="Lists" id="Skills_List">AI Specialist | Data Scientist Software Developer | Bilingual</p>
     </div>
 
     <div class="row2_col2"> 
-        <p class="Programming_Languages">Programming Languages</p>
-            <div class="Python">Python</div>
-            <div class="SQL">SQL</div>
-            <div class="HTML">HTML</div>
-            <div class="CSS">CSS</div>
-        <p class="Frameworks">Frameworks</p>
-            <div class="Django">Django</div>
-            <div class="Streamlit">Streamlit</div>
-            <div class="TensorFlow">TensorFlow</div>
-            <div class="Scikit-Learn">Scikit-Learn</div>
-        <p class="Languages">Languages</p>
-            <div class="Portuguese">Portuguese</div>
-            <div class="English">English</div>
-            <div class="German">German</div>
-            <div class="French">French</div>
-    </div>
-</div>
-
-<div class="row3">
-
-    <div class="NavBar_3">
-        <img src="{% static '/images/logo_gabriel.png'%}" alt="Logo" style="position: absolute; width: 191px; height: 51px; left: 51px; top: 38px;">
-        
-        <ul>
-            <li> <a class="home" href="hyperlink to be added">Home</a> </li>
-            <li> <a class="about" href="hyperlink to be added">About</a> </li>
-            <li> <a class="projects" href="hyperlink to be added">Projects</a> </li>
-        </ul>
-    
-
-        <button class="Download_Button" type="button"> 
-            <img src="{% static '/images/download_cv.png' %}" alt="Download Icon">
-            Download CV
-        </button> 
+        <h2 class="Subtitles_Left" id="Programming_Languages">Programming Languages</h2>
+            <div class="Skill_Boxes_Left" id="Python">Python</div>
+            <div class="Skill_Boxes_Left" id="SQL">SQL</div>
+            <div class="Skill_Boxes_Left" id="HTML">HTML</div>
+            <div class="Skill_Boxes_Left" id="CSS">CSS</div>
+        <h2 class="Subtitles_Left" id="Frameworks">Frameworks</h2>
+            <div class="Skill_Boxes_Left" id="Django">Django</div>
+            <div class="Skill_Boxes_Left" id="Streamlit">Streamlit</div>
+            <div class="Skill_Boxes_Left" id="TensorFlow">TensorFlow</div>
+            <div class="Skill_Boxes_Left" id="Scikit-Learn">Scikit-Learn</div>
+        <h2 class="Subtitles_Left" id="Languages">Languages</h2>
+            <div class="Skill_Boxes_Left" id="Portuguese">Portuguese</div>
+            <div class="Skill_Boxes_Left" id="English">English</div>
+            <div class="Skill_Boxes_Left" id="German">German</div>
+            <div class="Skill_Boxes_Left" id="French">French</div>
     </div>
 
-    <p class="Projects">Projects</p>
+</section>
 
-    <div class="row3_col1">
-        <p class="Project_1">Project 01</p>
-        <p class="Description_1">Description</p>
-        <p class="Paragraph_Description_1">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI,</p>
-        <p class="Tools_1">Programming Languages</p>
-        <div class="Python_Tool_1">Python</div>
-        <button class="Repository_1" type="button">
-            <img src="{% static '/images/github_button.png' %}" alt="Git_Hub Button 1">
+<section id="Projects" class="row3">
+
+    <h1 class="Heading" id="Projects_Title">Projects</h1>
+
+    <div id="row3_col1" class="Projects_Boxes">
+        <h3 class="Heading_Boxes" id="Project_1">Analysis of Brazilian Development Indicators</h3>
+        <h4 class="Descriptions_Heading" id="Description_1">Description</h4>
+        <p class="Paragraph_Descriptions" id="Paragraph_Description_1">A dashboard developed for understanding the temporal evolution of development indicators from Brazil. The aspects considered vary through economy, nature and population these considering parameters as GDP, forest area and demography.  The method applied was based on determining, visualizing and sectioning the most meaningful features from the data, to accomplish it different styles of graphs were plotted in separated pages and tabs.</p>
+        <h4 class="Tools_Heading" id="Tools_1">Tools</h4>
+        <div class="Tools_Boxes" id="Python_Tool_1">Python</div>
+        <div class="Tools_Boxes" id="Streamlit_Tool_1">Streamlit</div>
+        <a class="GitHub_Buttons" id="Repository_1" href="https://github.com/devGvieira/Analysis_BrWDI">
+            <img class="GitHub_Download" src="{% static '/images/github_button.png' %}" alt="Git_Hub Button 1">
             GitHub Repository
-        </button>
+        </a>
     </div>
 
-    <div class="row3_col2">
-        <p class="Project_2">Project 02</p>
-        <p class="Description_2">Description</p>
-        <p class="Paragraph_Description_2">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI,</p>
-        <p class="Tools_2">Programming Languages</p>
-        <div class="Python_Tool_2">Python</div>
-        <button class="Repository_2" type="button">
-            <img src="{% static '/images/github_button.png' %}" alt="Git_Hub Button 2">
+    <div class="Projects_Boxes" id="row3_col2">
+        <h3 class="Heading_Boxes" id="Project_2">Binary Classification of Images</h3>
+        <h4 class="Descriptions_Heading" id="Description_2">Description</h4>
+        <p class="Paragraph_Descriptions" id="Paragraph_Description_2">This project is comprised of an AI model for binary classification of images, the architecture applied was a Convolutional Neural Network and it was applied using TensorFlow and Keras. Techniques as early stopping and exponential decay for the learning rate were implemented to avoid overfitting and optimize the computational cost, respectively. An accuracy greater than 86% was reached.</p>
+        <h4 class="Tools_Heading" id="Tools_2">Tools</h4>
+        <div class="Tools_Boxes" id="Python_Tool_2">Python</div>
+        <div class="Tools_Boxes" id="TensorFlow_Tool_2">TensorFlow</div>
+        <a class="GitHub_Buttons" id="Repository_2" href="https://github.com/devGvieira/Image_Classification">
+            <img class="GitHub_Download" src="{% static '/images/github_button.png' %}" alt="Git_Hub Button 2">
             GitHub Repository
-        </button>
+        </a>
     </div>
 
-    <div class="row3_col3">
-        <p class="Project_3">Project 03</p>
-        <p class="Description_3">Description</p>
-        <p class="Paragraph_Description_3">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI,</p>
-        <p class="Tools_3">Programming Languages</p>
-        <div class="Python_Tool_3">Python</div>
-        <button class="Repository_3" type="button">
-            <img src="{% static '/images/github_button.png' %}" alt="Git_Hub Button 3">
+    <div class="Projects_Boxes" id="row3_col3">
+        <h3 class="Heading_Boxes" id="Project_3">Data Wrangling of Typhoon Incidences in Japan</h3>
+        <h4 class="Descriptions_Heading" id="Description_3">Description</h4>
+        <p class="Paragraph_Descriptions" id="Paragraph_Description_3">Such work had as objective acquaintace to the process of preparing data for use in data science models and, in order to meet such purpose, a challenging dataset from a governmental website was obtained. The data was cleaned using methods from pandas and involved not only rearranging and classifying its features, but also splitting the original dataframe's columns according to information provided online.</p>
+        <h4 class="Tools_Heading" id="Tools_3">Tools</h4>
+        <div class="Tools_Boxes" id="Python_Tool_3">Python</div>
+        <a class="GitHub_Buttons" id="Repository_3" href="https://github.com/devGvieira/Data_Wrangling-Typhoons">
+            <img class="GitHub_Download" src="{% static '/images/github_button.png' %}" alt="Git_Hub Button 3">
             GitHub Repository
-        </button>
+        </a>
     </div>
-</div>
+</section>
 
-<div class="Bottom_NavBar">
+<footer class="Bottom_NavBar" id="Bottom_NavBar">
     <div class="Bottom_Logo">
-        <img src="{% static '/images/logo_bottom.png' %}" alt="Logo" style="position: absolute; width: 304px; height: 87px; left: 191px; top: 56px;">
+        <img class="Logo_Bottom" src="{% static '/images/logo_bottom.png' %}" alt="Logo">
     </div>
     <p class="Contact_Bottom">Contact</p>
-    <img src="{% static '/images/gmail.png' %}" alt="Gmail" style="position: absolute; width: 23.15px; height: 25px; left: 622px; top: 120px;">
+    <img class="Gmail" src="{% static '/images/gmail.png' %}" alt="Gmail">
     <p class="Gmail_Bottom">devGvieira@gmail.com</p>
-    <img src="{% static '/images/call.png' %}" alt="Call" style="position: absolute; width: 25.02px; height: 25.04px; left: 622px; top: 158px;">
+    <img class="Call" src="{% static '/images/call.png' %}" alt="Call">
     <p class="Phone_Bottom">(43) 98417-1706</p>
     <p class="Social_Media_Bottom">Social Media</p>
-    <button class="Instagram_Bottom" type="button"> <img src="{% static '/images/instagram_bottom.png' %}" alt="instagram Icon"> </button>
-    <button class="LinkedIn_Bottom" type="button"> <img src="{% static '/images/linkedin_bottom.png' %}" alt="LinkedIn Icon"> </button>
-    <button class="GitHub_Bottom" type="button"> <img src="{% static '/images/github_bottom.png' %}" alt="GitHub Icon"> </button>
+    <a class="Instagram_Bottom" id="Instagram_Bottom_Button" href="https://www.instagram.com/g_briel.vieira/"> <img id="Instagram_Bottom_Image" src="{% static '/images/instagram_bottom.png' %}" alt="instagram Icon"> </a>
+    <a class="LinkedIn_Bottom" id="LinkedIn_Bottom_Button" href="https://www.linkedin.com/in/devgvieira/"> <img id="LinkedIn_Bottom_Image"  src="{% static '/images/linkedin_bottom.png' %}" alt="LinkedIn Icon"> </a>
+    <a class="GitHub_Bottom" id="GitHub_Bottom_Button" href="https://github.com/devGvieira"> <img id="GitHub_Bottom_Image" src="{% static '/images/github_bottom.png' %}" alt="GitHub Icon"> </a>
     <p class="Copyright">Copyright © Todos os Direitos Reservados - Design by Fellipe Tereska</p>
-    <img src="{% static '/images/group.png' %}" alt="Group Symbol" style="position: absolute; width: 15px; height: 21.76px; left: 954px; top: 205px;">
-</div>
+    <img class="Group_Symbol" src="{% static '/images/group.png' %}" alt="Group Symbol">
+</footer>
 
 </body>
 

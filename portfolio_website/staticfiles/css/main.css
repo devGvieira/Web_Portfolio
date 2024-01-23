@@ -1,11 +1,42 @@
 body{
-    height: 100px;
+    width: 100%;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     position: absolute;
-    top: 0;
-    left: 200px;
     background-color: #1F1F1F;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 5.5vw;
+    margin: 0;
+    z-index: 1000;
+    top: 0;
+
+    background: #1F1F1F;
+    box-shadow: 0vw 0.2vw 1vw 0.4vw rgba(0, 0, 0, 0.2);
+}
+
+
+#Logo {
+    position: absolute; 
+    width: 10vw; 
+    height: auto; 
+    left: 1vw; 
+    top: 1.75vw;
+}
+
+#Download_CV {
+    width: 2.2vw;
+    height: auto;
 }
 
 ul {
@@ -17,88 +48,76 @@ ul {
     text-decoration: none;
 }
 
-a.home:link, a.home:visited, a.home:hover, a.home:active{
+a.NavBar_Buttons {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 1.5vw;
     text-transform: capitalize;
     position: absolute;
-    width: 68px;
-    height: 33px;
-    left: 505px;
-    top: 37px;   
+    top: 2vw;   
 }
 
-a.about:link, a.about:visited, a.about:hover, a.about:active {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    text-transform: capitalize;
-    position: absolute;
-    width: 68px;
-    height: 33px;
-    left: 649px;
-    top: 37px;
+#home:link, #home:visited, #home:hover, #home:active {
+    left: 40vw;
 }
 
-a.projects:link, a.projects:visited, a.projects:hover, a.projects:active {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 33px;
-    text-transform: capitalize;
-    position: absolute;
-    width: 90px;
-    height: 33px;
-    left: 793px;
-    top: 37px;
-    }
+#about:link, #about:visited, #about:hover, #about:active {
+    left: 50vw;
+}
 
-button.Download_Button{
+#projects:link, #projects:visited, #projects:hover, #projects:active {
+    left: 60vw;
+}
+
+a.Download_Button{
     position: absolute;
-    width: 190px;
-    height: 59px;
-    left: 1116px;
-    top: 27px;
-    border-radius: 10px;
+    width: 10vw;
+    height: 2.75vw;
+    right: 2vw;
+    top: 2vw;
+    border-radius: 0.5vw;
     background-color: #540D8D;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 0.85vw;
     text-transform: capitalize;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border: none;
+    text-decoration: none;
 
     color: #FFFFFF;
 }
 
+section.row1{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    margin: 0;
+}
+
+img.Purple_Graph {
+    position: absolute; 
+    width: 28vw;
+    height: auto;
+    left: 18vw;
+    top: 13vw;    
+}
+
 p.Name {
     position: absolute;
-    width: 452px;
-    height: 87px;
-    left: 714px;
-    top: 227px;
+    left: 54.5vw;
+    top: 15vw;
     
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 87px;
+    font-size: 2.8vw;
     text-align: left;
     
     color: #FFFFFF;
@@ -106,129 +125,144 @@ p.Name {
 
 p.Text {
     position: absolute;
-    width: 573px;
-    height: 80px;
-    left: 714px;
-    top: 339px;
+    width: 30vw;
+    height: 8vw;
+    left: 54.5vw;
+    top: 21.5vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 1vw;
     text-align: justify;
 
     color: #FFFFFF;
 }
 
-button.LearnMore {
+#LearnMore {
     position: absolute;
-    width: 166px;
-    height: 59px;
-    left: 714px;
-    top: 459px;
+    width: 9.5vw;
+    height: 2.75vw;
+    left: 54.5vw;
+    top: 29vw;
 
     background: #540D8D;
-    border-radius: 10px;
+    border-radius: 0.5vw;
     border: none;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 1.175vw;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
 
     color: #FFFFFF;    
 }
 
-button.Contact {
+#Contact {
     position: absolute;
-    width: 166px;
-    height: 59px;
-    left: 910px;
-    top: 459px;
+    width: 9.5vw;
+    height: 2.75vw;
+    left: 65.5vw;
+    top: 29vw;
 
     background: #D6DAE4;
-    border-radius: 10px;
-
+    border-radius: 0.5vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 1.175vw;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
 
     color: #636363;    
 }
 
-button.Instagram {
+#Instagram, #Instagram_Image {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 1176px;
-    top: 702px;
+    width: 1.75vw;
+    height: auto;
+    right: 3.85vw;
+    top: 24.5vw;
     background-color: #1F1F1F;
     border: none;
 }
 
-button.LinkedIn {
+#LinkedIn, #LinkedIn_Image {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 1226px;
-    top: 702px;
+    width: 1.75vw;
+    height: auto;
+    right: 2.4vw;
+    top: 24.5vw;
     background-color: #1F1F1F;
     border: none;
 }
 
-button.GitHub {
+#GitHub, #GitHub_Image {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 1276px;
-    top: 702px;
+    width: 1.75vw;
+    height: auto;
+    right: 1.1vw;
+    top: 24.5vw;
     background-color: #1F1F1F;
     border: none;    
 }
 
-div.row2{
+section.row2{
     position: absolute;
-    top: 768px;
+    height: 60vw; 
+    top: 52.25vw;
     left: 0;
-    display: flex;
+    flex: 1;
     justify-content: space-between;
     background: #D9D9D9;
-    width: 1366px;
-    height: 768px;
+    width: 100vw;
 }
 
-div.NavBar_2 {
-
+h1.Heading {
     position: absolute;
-    width: 1366px;
-    height: 112px;
-    left: 0px;
-    top: 0px;
+    top: 6.75vw;
+    left: 48vw;
 
-    background: #1F1F1F;
-    box-shadow: 0px 4px 24px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5vw;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+#About_Title{
+    color: #540D8D;
+}
+
+img.Profile_Pic{
+    position: absolute; 
+    width: 13.5vw;
+    height: auto; 
+    left: 10vw;
+    top: 15vw;    
 }
 
 p.Name_ {
 
     position: absolute;
-    width: 283px;
-    height: 54px;
-    left: 372px;
-    top: 190px;
+    width: 15vw;
+    left: 24.75vw;
+    top: 16.5vw;   
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: 2vw;
     text-transform: capitalize;
 
     color: #000000;
@@ -237,16 +271,14 @@ p.Name_ {
 p.Age {
 
     position: absolute;
-    width: 141px;
-    height: 33px;
-    left: 372px;
-    top: 250px;
+    width: 15vw;
+    left: 25vw;
+    top: 20vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 33px;
+    font-size: 1.25vw;
     text-transform: capitalize;
 
     color: #000000;
@@ -255,16 +287,13 @@ p.Age {
 p.Email_1 {
 
     position: absolute;
-    width: 265px;
-    height: 33px;
-    left: 372px;
-    top: 278px;
-
+    width: 15vw;
+    left: 24.75vw;
+    top: 22vw;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 33px;
+    font-size: 1.1vw;
 
     color: #7D7D7D;
 }
@@ -272,883 +301,427 @@ p.Email_1 {
 p.Bio {
 
     position: absolute;
-    width: 758px;
-    height: 116px;
-    left: 110px;
-    top: 400px;
+    width: 43vw;
+    left: 10vw;
+    top: 28vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.85vw;
 
     color: #343434;
 }
 
-p.Professional_Exp {
+h2.Heading_Bottom_Row_2 {
 
     position: absolute;
-    width: 395px;
-    height: 44px;
-    left: 105px;
-    top: 1300px;
+    width: 20vw;
+    height: 3vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 1.6vw;
     text-transform: capitalize;
 
     color: #540D8D;
 }
 
-p.Experience {
+p.Lists {
 
     position: absolute;
-    width: 327px;
-    height: 54px;
-    left: 105px;
-    top: 1350px;
+    width: 17vw;
+    height: 3vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1vw;
     text-transform: capitalize;
 
     color: #3E3E3E;
 }
 
-p.Skills {
+#Professional_Exp {
+    left: 10vw;
+    top: 39.5vw;
+}
 
+
+#Skills {
+    left: 35vw;
+    top: 39.5vw;
+}
+
+#Experience {
+    left: 10vw;
+    top: 42.5vw;
+}
+
+#Skills_List {
+    left: 35vw;
+    top: 42.5vw;
+}
+
+h2.Subtitles_Left {
     position: absolute;
-    width: 88px;
-    height: 44px;
-    left: 567px;
-    top: 1300px;
+    left: 68.5vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 1.3vw;
     text-transform: capitalize;
 
     color: #540D8D;
 }
 
-p.Skills_List {
+#Programming_Languages {
+    top: 12vw;
 
-    position: absolute;
-    width: 323px;
-    height: 54px;
-    left: 567px;
-    top: 1350px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 27px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
 }
 
-p.Programming_Languages {
+#Frameworks {
+    top: 24.5vw;
 
-    position: absolute;
-    width: 308px;
-    height: 33px;
-    left: 957px;
-    top: 920px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
-    text-transform: capitalize;
-
-    color: #540D8D;
 }
 
-p.Frameworks {
-
-    position: absolute;
-    width: 155px;
-    height: 33px;
-    left: 957px;
-    top: 1081px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
-    text-transform: capitalize;
-
-    color: #540D8D;
+#Languages {
+    top: 37.5vw;
 }
 
-p.Languages {
-
+div.Skill_Boxes_Left {
     position: absolute;
-    width: 133px;
-    height: 33px;
-    left: 957px;
-    top: 1317px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
-    text-transform: capitalize;
-
-    color: #540D8D;
-}
-
-div.Python {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 957px;
-    top: 980px;
+    width: 9vw;
+    height: 2.3vw;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
     background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0vw 0.7vw 1vw 0.2vw rgba(0, 0, 0, 0.1);
+    border-radius: 0.5vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 1.1vw;
+    line-height: 1vw;
     text-transform: capitalize;
 
     color: #3E3E3E;
 }
 
-div.SQL {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 1137px;
-    top: 980px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#Python {
+    left: 68.5vw;
+    top: 16vw;
 }
 
-div.Django {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 957px;
-    top: 1141px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#SQL {
+    left: 68.5vw;
+    top: 19vw;
 }
 
-div.Streamlit {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 1137px;
-    top: 1141px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#HTML{
+    left: 78.5vw;
+    top: 16vw;
 }
 
-div.TensorFlow {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 957px;
-    top: 1216px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#CSS {
+    left: 78.5vw;
+    top: 19vw;
 }
 
-div.Scikit-Learn {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 1137px;
-    top: 1216px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
-    }
-
-div.Portuguese {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 957px;
-    top: 1377px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#Django {
+    left: 78.5vw;
+    top: 28vw;
 }
 
-div.English {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 1137px;
-    top: 1377px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#Streamlit {
+    left: 68.5vw;
+    top: 31vw;
 }
 
-div.German {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 957px;
-    top: 1452px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#Scikit-Learn {
+    left: 68.5vw;
+    top: 28vw;
 }
 
-div.French {
-
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 1137px;
-    top: 1452px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    background: #D9D9D9;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: capitalize;
-
-    color: #3E3E3E;
+#TensorFlow {
+    left: 78.5vw;
+    top: 31vw;
 }
 
-div.row3 {
+#Portuguese {
+    left: 78.5vw;
+    top: 41vw;
+}
+
+#English {
+    left: 68.5vw;
+    top: 41vw;
+}
+
+#German {
+    left: 78.5vw;
+    top: 44vw;
+}
+
+#French {
+    left: 68.5vw;
+    top: 44vw;
+}
+
+section.row3 {
     position: absolute;
-    top: 1537px;
+    top: 100vw;
     left: 0;
     display: flex;
     justify-content: space-between;
-    background: #D9D9D9;
-    width: 1366px;
-    height: 831px;
+    background-color: #1F1F1F;
+    width: 100vw;
+    height: 60vw;
+    margin-top: 4vw;
 }
 
-div.NavBar_3 {
+#Projects_Title {
+    left: 46.75vw;
+    color: #FFFFFF;
+}
+
+div.Projects_Boxes {
 
     position: absolute;
-    width: 1366px;
-    height: 112px;
-    left: 0px;
-    top: 0px;
+    width: 20vw;
+    height: 27vw;
+    top: 17.5vw;
+
+    background-color: #292929 ;
+    box-shadow: 0vw 1vw 2vw 1vw rgba(0, 0, 0, 0.1);
+    border-radius: 1.2vw;
+}
+
+#row3_col1 {
+    left: 5.5vw;
+}
+
+#row3_col2 {
+    left: 41.75vw;
+}
+
+#row3_col3 {
+    left: 77vw;
+}
+
+h3.Heading_Boxes {
+
+    position: relative;
+    left: 1vw;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.2vw;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+#Project_2 {
+    font-size: 1.27vw;
+}
+
+
+h4.Descriptions_Heading {
+
+    position: relative;
+    left: 1vw;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1vw;
+    text-transform: capitalize;
+
+    color: #e9ecef;
+}
+
+#Description_2 {
+    top: 0vw;
+}
+
+#Description_3 {
+    top: 0.6vw;
+}
+
+p.Paragraph_Descriptions {
+    position: relative;
+    width: 17.5vw;
+    height: 8.5vw;
+    left: 1vw;
+    top: -1vw;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.75vw;
+    text-align: justify;
+
+    color: #dee2e6;
+}
+
+#Paragraph_Description_1, #Paragraph_Description_2 {
+    top: -1vw;
+}
+
+#Paragraph_Description_3 {
+    top: -0.5vw;
+}
+
+h4.Tools_Heading {
+
+    position: relative;
+    left: 1vw;
+    top: 0.8vw;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1vw;
+    text-transform: capitalize;
+
+    color: #e9ecef;
+}
+
+#Tools_2 {
+    top: 0.6vw;
+}
+
+div.Tools_Boxes {
+
+    position: absolute;
+    height: 2vw;
+    top: 21vw;
+
+    background: #CDCDCD;
+    box-shadow: 0vw 0.5vw 2vw 0.5vw rgba(0, 0, 0, 0.1);
+    border-radius: 0.5vw;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75vw;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color: #420E6C;
+}
+
+#Python_Tool_1, #Python_Tool_2, #Python_Tool_3 {
+    left: 1vw;
+    width: 4vw;
+}
+
+#Streamlit_Tool_1 {
+    left: 6vw;
+    width: 5vw;
+}
+
+#TensorFlow_Tool_2 {
+    left: 6vw;
+    width: 5.5vw;    
+}
+
+a.GitHub_Buttons {
+
+    position: absolute;
+    width: 15vw;
+    height: 2.25vw;
+    top: 24vw;
+    left: 2.5vw;
+
+    background: #540D8D;
+    border-radius: 0.625vw;
+    border: none;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.85vw;
+    text-align: justify;
+    text-transform: capitalize;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+img.GitHub_Download {
+    width: 1.25vw;
+    height: auto;   
+}
+
+footer.Bottom_NavBar {
+
+    position: absolute;
+    width: 100vw;
+    height: 12.5vw;
+    top: 155vw;
+    padding: 0;
 
     background: #1F1F1F;
-    box-shadow: 0px 4px 24px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0vw 0.5vw 1vw 0.75vw rgba(0, 0, 0, 0.2);
 }
 
-p.Projects {
-
-    position: absolute;
-    width: 147px;
-    height: 48px;
-    left: 610px;
-    top: 97px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 48px;
-    text-align: justify;
-    text-transform: capitalize;
-
-    color: #540D8D;
+img.Logo_Bottom {
+    position: absolute; 
+    width: 17vw; 
+    height: auto; 
+    left: 3.5vw; 
+    top: 3vw;    
 }
 
-div.row3_col1 {
-    position: absolute;
-    width: 307px;
-    height: 450px;
-    left: 123px;
-    top: 241px;
-
-    background: #ECECEC;
-    box-shadow: 0px 4px 21px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    }
-
-p.Project_1 {
-
-    position: relative;
-    width: 133px;
-    height: 35px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 35px;
-    text-transform: capitalize;
-
-    color: #000000;
+img.Gmail {
+    position: absolute; 
+    left: 45vw; 
+    top: 5.35vw;
+    height: auto; 
+    width: 1.5vw;
 }
 
-p.Description_1 {
-
-    position: relative;
-    width: 89px;
-    height: 22px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: capitalize;
-
-    color: #343434;
+img.Call {
+    position: absolute; 
+    left: 45vw; 
+    top: 7.55vw;
+    width: 1.5vw;
+    height: auto;
 }
 
-p.Paragraph_Description_1 {
-
-    position: relative;
-    width: 269px;
-    height: 157px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: justify;
-    text-transform: capitalize;
-
-    color: #787878;
-}
-
-p.Tools_1 {
-
-    position: relative;
-    width: 300px;
-    height: 22px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: capitalize;
-
-    color: #343434;
-}
-
-div.Python_Tool_1 {
-
-    position: absolute;
-    width: 85px;
-    height: 32px;
-    left: 20px;
-    top: 340px;
-
-    background: #CDCDCD;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    text-transform: capitalize;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: #420E6C;
-}
-
-div.row3_col2 {
-
-    position: absolute;
-    width: 307px;
-    height: 450px;
-    left: 530px;
-    top: 241px;
-
-    background: #ECECEC;
-    box-shadow: 0px 4px 21px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-p.Project_2 {
-
-    position: relative;
-    width: 133px;
-    height: 35px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 35px;
-    text-transform: capitalize;
-
-    color: #000000;
-}
-
-p.Description_2 {
-
-    position: relative;
-    width: 89px;
-    height: 22px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: capitalize;
-
-    color: #343434;
-}
-
-p.Paragraph_Description_2 {
-
-    position: relative;
-    width: 269px;
-    height: 157px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: justify;
-    text-transform: capitalize;
-
-    color: #787878;
-}
-
-p.Tools_2 {
-
-    position: relative;
-    width: 300px;
-    height: 22px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: capitalize;
-
-    color: #343434;
-}
-
-div.Python_Tool_2 {
-
-    position: absolute;
-    width: 85px;
-    height: 32px;
-    left: 20px;
-    top: 340px;
-
-    background: #CDCDCD;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    text-transform: capitalize;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: #420E6C;
-}
-
-div.row3_col3 {
-
-    position: absolute;
-    width: 307px;
-    height: 450px;
-    left: 937px;
-    top: 241px;
-
-    background: #ECECEC;
-    box-shadow: 0px 4px 21px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-p.Project_3{
-
-    position: relative;
-    width: 133px;
-    height: 35px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 35px;
-    text-transform: capitalize;
-
-    color: #000000;
-}
-
-p.Description_3 {
-
-    position: relative;
-    width: 89px;
-    height: 22px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: capitalize;
-
-    color: #343434;
-}
-
-p.Paragraph_Description_3 {
-
-    position: relative;
-    width: 269px;
-    height: 157px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: justify;
-    text-transform: capitalize;
-
-    color: #787878;
-}
-
-p.Tools_3 {
-
-    position: relative;
-    width: 300px;
-    height: 22px;
-    left: 20px;
-    top: 0px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-transform: capitalize;
-
-    color: #343434;    
-    }
-
-div.Python_Tool_3 {
-    position: absolute;
-    width: 85px;
-    height: 32px;
-    left: 20px;
-    top: 340px;
-
-    background: #CDCDCD;
-    box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    text-transform: capitalize;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: #420E6C;
-}
-
-button.Repository_1 {
-    position: absolute;
-    width: 230px;
-    height: 41px;
-    left: 40px;
-    top: 390px;
-
-    background: #540D8D;
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: justify;
-    text-transform: capitalize;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: #FFFFFF;
-}
-
-button.Repository_2 {
-
-    position: absolute;
-    width: 230px;
-    height: 41px;
-    left: 40px;
-    top: 390px;
-
-    background: #540D8D;
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: justify;
-    text-transform: capitalize;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: #FFFFFF;
-}
-
-button.Repository_3 {
-
-    position: absolute;
-    width: 230px;
-    height: 41px;
-    left: 40px;
-    top: 390px;
-
-    background: #540D8D;
-    border-radius: 10px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: justify;
-    text-transform: capitalize;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    color: #FFFFFF;
-}
-
-div.Bottom_NavBar {
-
-    position: absolute;
-    width: 1366px;
-    height: 196px;
-    left: 0px;
-    top: 2338px;
-
-    background: #1F1F1F;
+img.Group_Symbol {
+    position: absolute; 
+    left: 64.75vw; 
+    top: 11.1vw;    
+    width: 0.75vw;
+    height: auto;
 }
 
 p.Contact_Bottom {
 
     position: absolute;
-    width: 132px;
-    height: 48px;
-    left: 617px;
-    top: 11px;
+    left: 45vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.15vw;
     text-align: justify;
     text-transform: capitalize;
 
@@ -1158,16 +731,13 @@ p.Contact_Bottom {
 p.Gmail_Bottom {
 
     position: absolute;
-    width: 190px;
-    height: 21px;
-    left: 657px;
-    top: 106px;
+    left: 46.85vw;
+    top: 4.85vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 0.8vw;
     text-align: justify;
 
     color: #FFFFFF;
@@ -1176,16 +746,13 @@ p.Gmail_Bottom {
 p.Phone_Bottom {
 
     position: absolute;
-    width: 121px;
-    height: 22px;
-    left: 657px;
-    top: 142px;
+    left: 46.85vw;
+    top: 6.8vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 0.8vw;
     text-align: justify;
     text-transform: capitalize;
 
@@ -1195,16 +762,12 @@ p.Phone_Bottom {
 p.Social_Media_Bottom {
 
     position: absolute;
-    width: 250;
-    height: 48px;
-    left: 954px;
-    top: 11px;
+    right: 5vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.35vw;
     text-align: justify;
     text-transform: capitalize;
 
@@ -1214,47 +777,44 @@ p.Social_Media_Bottom {
 p.Copyright {
 
     position: absolute;
-    width: 700px;
-    height: 22px;
-    left: 460px;
-    top: 190px;
+    left: 40.75vw;
+    top: 10.45vw;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 0.68vw;
     text-align: justify;
 
     color: #FFFFFF;
 }
 
-button.Instagram_Bottom {
+#Instagram_Bottom_Button, #Instagram_Bottom_Image{
     position: absolute; 
-    width: 30px; 
-    height: 30px; 
-    left: 954px; 
-    top: 116px;
+    right: 9vw; 
+    top: 2.95vw;
     background: none;
     border: none;
+    width: 1.75vw;
+    height: auto;
 }
 
-button.LinkedIn_Bottom {
+#LinkedIn_Bottom_Button, #LinkedIn_Bottom_Image{
     position: absolute; 
-    width: 30px; 
-    height: 30px; 
-    left: 1004px; 
-    top: 116px;
+    right: 7.5vw;
+    top: 2.95vw;
     background: none;
     border: none;
+    width: 1.75vw;
+    height: auto;
 }
 
-button.GitHub_Bottom {
+#GitHub_Bottom_Button, #GitHub_Bottom_Image {
     position: absolute; 
-    width: 30px; 
-    height: 30px; 
-    left: 1054px; 
-    top: 116px;
+    right: 6vw;
+    top: 2.95vw;
     background: none;
     border: none;
+    width: 1.75vw;
+    height: auto;
 }
